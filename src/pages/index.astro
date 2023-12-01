@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="CineTour">
+  <main>
+	  <h2 class="text-3xl font-bold m-5">Las Ultimas Noticias</h2>
+	  <section class="container">
+		<div class="flex justify-center flex-wrap gap-4">
+			<Card pagina="/elencargado" imagen="/CPFP52CY3RAA3KQOFESTRUM7TM.avif" noimagen="Imagen del Encargado 1" titulo="“El Encargado 2″: ¿quién es quién en la nueva temporada de la serie?" />
+			<Card pagina="/elbancodedave" imagen="/el-banco-de-dave-netflix_862x485.webp" noimagen="El banco de Dave | Netflix" titulo="Netflix: la película que se estrenó en 2023, está basada en hechos reales y es la MÁS VISTA DEL MUNDO" />
+			<Card pagina="/theboys" imagen="/CPFP52CY3RAA3KQOFESTRUM7TM.webp" noimagen="Imagen del Encargado 3" titulo="‘The Boys: Mexico’ será el nuevo spin-off de la exitosa serie de Amazon Prime Video" />			
+		</div>
+	  </section>
+  </main>
+  <main>
+	  <h2 class="text-3xl font-bold m-5 gap-4">Nuestras Ultimas Criticas</h2>
+	  <section class="container">
+		  <div class="flex justify-center flex-wrap">
+			<Card pagina="/blindspot" imagen="/blindspot.webp" noimagen="Imagen de Blindspot | Netflix" titulo="Blindspot: Un Intrincado Laberinto de Misterios y Acción" />
+			<Card pagina="/los100" imagen="/los100.avif" noimagen="Imagen de Los 100 | Netflix" titulo="Los 100: Un Viaje Épico de Supervivencia y Desafíos Morales" />
+			<Card pagina="/brakingbad" imagen="/brakingbad.webp" noimagen="Imagen Braking Bad | Netflix" titulo="Breaking Bad: La Metamorfosis de un Hombre Común en el Mundo del Crimen" />
+		  </div>
+	  </section>
+	</main>
+  <br>
+</Layout>

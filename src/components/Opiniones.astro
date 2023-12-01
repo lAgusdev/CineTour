@@ -1,0 +1,21 @@
+---
+interface Props {
+	titulo: string;
+	parrafouno: string;
+	imagen: string;
+	noimagen: string;
+	parrafodos: string;
+	parrafotres: string;
+	parrafocuatro: string;
+}
+
+const { titulo, parrafouno, imagen, noimagen, parrafodos, parrafotres, parrafocuatro, } = Astro.props;
+---
+<h2 class="text-3xl font-bold m-5 mt-8 mx-14">{titulo}</h2>
+<img class="w-3/5 mx-14" src={imagen} alt={noimagen} title={titulo}>
+<p class="mx-14 text-slate-500 italic">{noimagen}</p>
+<p class="m-5 mx-14 text-lg">{parrafouno}</p>
+<p class="m-5 mx-14 text-lg">{parrafodos}</p>
+<p class="m-5 mx-14 text-lg">{parrafotres}</p>
+<p class="m-5 mx-14 text-lg">{parrafocuatro}</p>
+<br>

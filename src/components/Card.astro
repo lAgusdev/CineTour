@@ -1,0 +1,15 @@
+---
+interface Props {
+	pagina: string;
+	imagen: string;
+	noimagen: string;
+	titulo: string;
+}
+
+const { pagina, imagen, noimagen, titulo } = Astro.props;
+---
+<a href={pagina} class="bg-gray-100 rounded-xl p-3 m-2 w-72 hover:shadow-lg" title={titulo}>
+	<img src={imagen} alt={noimagen} class="rounded-xl mb-3">
+	<div class="h-px bg-gray-400 mx-2"></div>
+	<h3 class="font-semibold mt-1">{titulo}</h3>
+</a>
